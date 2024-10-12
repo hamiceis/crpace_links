@@ -40,7 +40,6 @@ body * {
   max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
-  
 }
 
 /* profile */
@@ -135,7 +134,7 @@ ul li a {
 }
 
 .icon {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 /* pseudo-selector */
@@ -204,7 +203,6 @@ footer {
   }
 }
 
-
 /* scrollbar */
 
 /* Altera a cor de fundo da barra de rolagem */
@@ -214,13 +212,12 @@ footer {
 
 /* Altera a cor do indicador da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-  background: #FF6600;
+  background: #ff6600;
   border-radius: 30px;
 }
 ::-webkit-scrollbar-track {
   background: #000;
 }
-
 
 /*Ticker*/
 
@@ -240,10 +237,16 @@ footer {
   animation: ticker 30s linear infinite;
 }
 
+@media (max-width: 768px) {
+  #ticker {
+    animation: ticker 15s linear infinite;
+  }
+}
+
 #ticker p {
   display: flex;
   align-items: center;
-  color: #FFF;
+  color: #fff;
   gap: 20px;
   font-size: 20px;
   font-weight: bold;
@@ -251,7 +254,7 @@ footer {
 }
 
 #ticker .i {
-  color: #FFF;
+  color: #fff;
 }
 
 @keyframes ticker {
